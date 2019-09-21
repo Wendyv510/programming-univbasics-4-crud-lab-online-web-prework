@@ -75,4 +75,33 @@ describe "remove_element_from_end_of_array"do
 end
 
 describe "remove_element_from_start_of_array"do
-  it "takes in an arggument of an array and removes the first"
+  it "takes in an arggument of an array and removes the first element from the array"do
+    array=["wow","I","am","really","learning","arrays!"]
+    expect(remove_element_from_start_of_array(array)).to eq("wow")
+  end
+end
+
+describe "retrieve_element_from_index"do
+  it "takes in an argument of an array and an index number and reurns the element stored at that index" do
+    array=["wow","I","am","really","learning","arrays!"]
+    index_number=2
+    expect(retrieve_element_from_index(array,2)).to eq("am")
+  end
+end
+
+describe "retrieve_first_element_from_array"do
+  it "takes in an argument of an array and returns the first element stored in the array" do
+    array=["wow","I","am","really","learning","arrays!"]
+    expect(retrieve_first_element_from_array(array)).to eq("arrays!")
+  end
+end
+
+describe "update_element_from_index"do
+  it "takes in an argument of an array, and index number and element value and returns the updated element"do
+    array= ["wow","I","am","really","learning","arrays!"]
+    index_number=4
+    expect(update_element_from_index(array,4,"totally")).to eq("totally")
+  end 
+end
+    
+    
